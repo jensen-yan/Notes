@@ -13,7 +13,7 @@ chmod +x ./test.sh  #使脚本具有执行权限
 #### 变量
 
 1. 定义变量: name="yanyue",  注意等号前后不能有空格!
-2. 使用变量:  echo $my_name / ${my_name},  加上$
+2. 使用变量:  echo \$my_name / \${my_name},  加上$
 3. 只读变量: readonly $name
 4. 删除变量: unset $name
 5. 三种变量
