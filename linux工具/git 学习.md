@@ -214,7 +214,7 @@ git submodule add [子项目网址] [目录]
 删除:
 
 	1. 删除.git/config, .gitsubmodule部分
- 	2. git rm --cached [目录]
+	2. git rm --cached [目录]
 
 签出: 获得子目录内容
 
@@ -227,3 +227,18 @@ git submodule update --init --recursive # 组合命令
 如果子目录有更新, 父目录中git pull 不会更新子目录, 可以git status查看下, git submodule update才更新
 
 如果就在子目录中更新了, 父目录也要commit一下
+
+
+
+### 安全
+
+1. 更换电脑后，发现无法push，需要在本地电脑上生成ssh key，添加到github中
+
+2. 以后git clone 尽量克隆 ssh链接的，https链接的需要使用什么令牌什么的，我的令牌是`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`
+
+3. ```
+   git remtoe set-url origin https://<token>@github.com/jensen-yan/<repo>.git
+   
+   ```
+
+4. 
